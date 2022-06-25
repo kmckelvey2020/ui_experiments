@@ -1,3 +1,37 @@
+/*-- ****************************************************** -->
+<---                      GLOBAL CSS                        -->
+<--- ****************************************************** -*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*-- ****************************************************** -->
+<---                     CSS VARIABLES                      -->
+<--- ****************************************************** -*/
+
+body, html,
+#root {
+  --main-color-light: whitesmoke;
+  --main-color-dark: whitesmoke;
+  --main-text-color-light: whitesmoke;
+  --main-text-color-dark: whitesmoke;
+  --main-font-family: "Century Gothic";
+  --bg-color-light: whitesmoke;
+  --bg-color-dark: whitesmoke;
+  --comp-color-light: whitesmoke;
+  --comp-color-dark: whitesmoke;
+  --comp-text-color-light: whitesmoke;
+  --comp-text-color-dark: whitesmoke;
+}
+
+p, body, html,
+#root {
+  color: darkslategray;
+  font-size: min(4vw, 18px);
+  font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+}
+
 html,
 body {
   padding: 0;

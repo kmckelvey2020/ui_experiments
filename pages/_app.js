@@ -1,7 +1,17 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import Layout from "@/src/components/layout";
+import { SearchContextProvider } from "@/src/context/search_context";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+/*-- ****************************************************** -->
+<---                         APP                            -->
+<--- ****************************************************** -*/
+
+export default function App({ Component, pageProps }) {
+  return (
+    <SearchContextProvider>
+      <Layout>
+          <Component {...pageProps} />
+      </Layout>
+    </SearchContextProvider>
+    )
 }
-
-export default MyApp
