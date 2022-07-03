@@ -10,9 +10,9 @@
 
 .form_input_container input,
 .form_input_nolabel input {
-    border: 1px solid rgb(130, 120, 110);
+    border: 1px solid var(--darkslategray);
     border-radius: .2rem;
-    color: rgb(100, 100, 100);
+    color: var(--darkslategray);
     font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
     margin: 0 0;
     padding: 0.25rem 0.25rem;
@@ -21,7 +21,7 @@
 }
 
 .form_input_container input {
-    background-color: rgba(255, 255, 255, .60);
+    background-color: rgba(255, 255, 255, .85);
     font-size: min(5vw, 1rem);
 }
 

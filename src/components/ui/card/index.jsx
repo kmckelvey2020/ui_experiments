@@ -1,13 +1,12 @@
-import styles from "./card.module.css";
 
 /*-- ****************************************************** -->
 <---                      CARD COMPONENT                    -->
 <--- ****************************************************** -*/
 
-export default function Card(props) {
+export default function Card({ id='card', class_name="card",  name='card', children, ...inputProps}) {
     return (
-        <div className={ styles.card }>
-            { props.children }
+        <div className={ class_name }>
+            { children }
         </div>
     )
 }

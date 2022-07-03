@@ -1,0 +1,77 @@
+/*-- ****************************************************** -->
+<---                CAROUSEL.MODULE.CSS                     -->
+<--- ****************************************************** -*/
+
+.carousel_basic {
+    border: 2px solid red;
+    position: relative;
+    width: 100%;
+    height: min(60vh, 35rem);
+    overflow: hidden;
+}
+
+.basic_child {
+    position: absolute;
+    width: 100%;
+    height: min(50vh, 30rem);
+    text-align: center;
+
+    -webkit-transform: translate3d(-90%, 0px, 0px);
+    -moz-transform: translate3d(-90%, 0px, 0px);
+    -ms-transform: translate3d(-90%, 0px, 0px);
+    -o-transform: translate(-90%, 0px, 0px);
+    transform: translate3d(-90%, 0px, 0px);
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -moz-transition: -moz-transform 0.5s ease-out;
+    -ms-transition: -ms-transform 0.5s ease-out;
+    -o-transition: -o-transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    z-index: 1;
+}
+
+.basic_child:target ~ .basic_child {
+    -webkit-transform: translate3d(90%, 0px, 0px);
+    -moz-transform: translate3d(90%, 0px, 0px);
+    -ms-transform: translate3d(90%, 0px, 0px);
+    -o-transform: translate(90%, 0px, 0px);
+    transform: translate3d(90%, 0px, 0px);
+    } 
+    
+.basic_child:target {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 3;
+}
+
+.basic_child:target + .basic_child {
+    z-index: 2;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    margin: 0px 1px 15px;
+    opacity: 0.7;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+

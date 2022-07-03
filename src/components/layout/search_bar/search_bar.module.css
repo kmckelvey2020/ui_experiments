@@ -1,0 +1,50 @@
+/*-- ****************************************************** -->
+<---               SEARCH_BAR.MODULE.CSS                    -->
+<--- ****************************************************** -*/
+
+.search_bar {   
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0.25rem 0.1rem;
+    padding: 0 auto;
+    vertical-align: middle; 
+}
+
+.search_bar input {
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    margin: 0 auto;
+    padding: 0.25rem 1rem; 
+    text-align: center;
+    width: min(30vw, 15rem);
+    vertical-align: middle; 
+}
+    
+.search_bar button {
+    background-color: var(--darkdustyblue);
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--lightdustyblue),
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkdustyblue),
+        -0.1rem 0.1rem 0rem 0rem var(--darkdustyblue),
+        -0.2rem 0.2rem 0.25rem 0rem var(--lightdustyblue);
+    color: whitesmoke;
+    font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+    font-size: min(4vw, 1rem);
+    margin: 0 auto;
+    padding: 0.25rem 1rem;
+    width: min(30vw, 7rem);
+    vertical-align: middle; 
+}
+
+.search_bar button:hover {
+    background-color: var(--lightgray);
+    border: 1px solid black;
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--lightdustyblue),
+        -0.1rem 0.1rem 0rem 0rem var(--darkdustyblue),
+        -0.2rem 0.2rem 0.25rem 0.1rem var(--lightdustyblue);
+    color: black;
+}

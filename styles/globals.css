@@ -1,9 +1,24 @@
 /*-- ****************************************************** -->
-<---                      GLOBAL CSS                        -->
+<---                     GLOBAL SET UP                      -->
 <--- ****************************************************** -*/
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p, body, html
+#root {
+  color: black;
+  font-size: min(5vw, 18px);
+  font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+  margin: 0rem 0rem;
+  padding: 0rem 0rem;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
 }
 
 /*-- ****************************************************** -->
@@ -12,39 +27,898 @@
 
 body, html,
 #root {
-  --main-color-light: whitesmoke;
-  --main-color-dark: whitesmoke;
-  --main-text-color-light: whitesmoke;
-  --main-text-color-dark: whitesmoke;
-  --main-font-family: "Century Gothic";
-  --bg-color-light: whitesmoke;
-  --bg-color-dark: whitesmoke;
-  --comp-color-light: whitesmoke;
-  --comp-color-dark: whitesmoke;
-  --comp-text-color-light: whitesmoke;
-  --comp-text-color-dark: whitesmoke;
+  --red: rgb(255, 0, 0);
+  --darkred: rgb(135, 0, 0);
+  --orange: rgb(255, 170, 0);
+  --yellow: rgb(255, 225, 0);
+  --lightmustard: rgb(255, 225, 115);
+  --mustard: rgb(225, 195, 85);
+  --darkmustard: rgb(165, 135, 25);
+  --green: rgb(0, 255, 0);
+  --darkgreen: rgb(20, 55, 20);
+  --lightolivegreen: rgb(130, 150, 130);
+  --olivegreen: rgb(60, 80, 60);
+  --darkolivegreen: rgb(0, 20, 0);
+  --lightaqua: rgb(200, 255, 255);
+  --aqua: rgb(0, 255, 255);
+  --darkaqua: rgb(0, 195, 195);
+  --lightblue: rgb(160, 240, 255);
+  --blue: rgb(0, 0, 255);
+  --darkblue: rgb(0, 0, 135);
+  --navy: rgb(20, 20, 80);
+  --lightdustyblue: rgb(120, 150, 190);
+  --dustyblue: rgb(60, 90, 130);
+  --darkdustyblue: rgb(0, 30, 70);
+  --indigo: rgb(120, 0, 255);
+  --lightviolet: rgb(190, 160, 200);
+  --violet: rgb(130, 100, 140);
+  --darkviolet: rgb(70, 40, 80);
+  --purple: rgb(190, 0, 255);
+  --hotpink: rgb(255, 0, 220);
+  --pink: rgb(255, 110, 200);
+  --lightrose: rgb(250, 205, 215);
+  --rose: rgb(190, 145, 155);
+  --darkrose: rgb(130, 85, 95);
+  --cream: rgb(215, 205, 205);
+  --lightbrown: rgb(155, 145, 145);
+  --brown: rgb(60, 40, 45);
+  --lightslategray: rgb(170, 190, 205);
+  --slategray: rgb(110, 130, 145);
+  --darkslategray: rgb(50, 70, 85);
+  --lightgray: rgb(190, 190, 190);
+  --gray: rgb(130, 130, 130);
+  --darkgray: rgb(70, 70, 70);}
+
+/*-- ****************************************************** -->
+<---                        HEADERS                         -->
+<--- ****************************************************** -*/
+
+h1 {
+    font-size: min(9vw, 2.75rem);
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
 }
 
-p, body, html,
-#root {
-  color: darkslategray;
-  font-size: min(4vw, 18px);
-  font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+h2 {
+    font-size: min(8.5vw, 2.5rem);
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
 }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+h3 {
+    font-size: min(8vw, 2.25rem);
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
 }
+
+h4 {
+    font-size: min(7vw, 2rem);
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
+}
+
+/*-- ****************************************************** -->
+<---                     NAVIGATION                         -->
+<--- ****************************************************** -*/
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+/*-- ****************************************************** -->
+<---                        MISC                            -->
+<--- ****************************************************** -*/
+
+.blur {
+    filter: blur(1rem);
 }
+
+/*-- ****************************************************** -->
+<---                       BUTTONS                          -->
+<--- ****************************************************** -*/
+
+.button {
+    border-radius: 0.2rem;
+    font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+    font-size: min(7vw, 1.5rem);
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+}
+
+.button1 {
+    border: 1px solid var(--darkdustyblue);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--lightdustyblue),
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkdustyblue),
+        -0.1rem 0.1rem 0rem 0rem var(--darkdustyblue),
+        -0.25rem 0.25rem 0.5rem 0rem var(--lightdustyblue);
+}
+
+.button2 {
+    border: 1px solid var(--darkolivegreen);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--lightolivegreen),
+        inset 0.15rem -0.15rem 0.5rem 0rem black;
+}
+
+.button3 {
+    border: 1px solid var(--darkmustard);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkmustard);
+}
+
+.button4 {
+    border: 1px solid var(--darkrose);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkrose),
+        -0.1rem 0.1rem 0rem 0rem var(--darkrose),
+        -0.25rem 0.25rem 0.5rem 0rem var(--lightrose);
+}
+
+.button5 {
+    border: 1px solid var(--gray);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--lightgray),
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkgray),
+        -0.1rem 0.1rem 0rem 0rem var(--gray),
+        -0.25rem 0.25rem 0.5rem 0rem var(--lightgray);
+}
+
+.button6 {
+    border: 1px solid black;
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--lightgray),
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkgray),
+        -0.1rem 0.1rem 0rem 0rem black,
+        -0.25rem 0.25rem 0.5rem 0rem var(--darkgray);
+}
+
+.button7 {
+    border: 1px solid var(--darkgray);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--lightgray),
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkgray),
+        -0.1rem 0.1rem 0rem 0rem var(--darkgray),
+        -0.25rem 0.25rem 0.5rem 0rem var(--lightgray);
+}
+
+.button8 {
+    border: 1px solid var(--darkviolet);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkviolet);
+}
+
+.button9 {
+    border: 1px solid var(--brown);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem black;
+}
+
+.button10 {
+    border: 1px solid black;
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--lightgray),
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkviolet);
+}
+
+.button11 {
+    border: 1px solid var(--darkslategray);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--lightslategray);
+}
+
+.button12 {
+    border: 1px solid black;
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkred),
+        -0.1rem 0.1rem 0rem 0rem var(--darkred),
+        -0.25rem 0.25rem 0.5rem 0rem var(--lightgray);
+}
+
+.button13 {
+    border: 1px solid black;
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkblue);
+}
+
+.button14 {
+    border: 1px solid black;
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkviolet),
+        -0.1rem 0.1rem 0rem 0rem var(--darkviolet),
+        -0.25rem 0.25rem 0.5rem 0rem var(--lightviolet);
+}
+
+.button1:hover {
+    background-image: radial-gradient(circle at 100% 0%, var(--cream) 0%, var(--lightdustyblue) 50%, var(--dustyblue) 100%);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--lightdustyblue),
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkdustyblue),
+        -0.1rem 0.1rem 0rem 0rem var(--darkdustyblue),
+        -0.25rem 0.25rem 0.5rem 0.1rem var(--lightdustyblue);
+}
+
+.button2:hover {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightolivegreen) 0%, var(--olivegreen) 50%, var(--darkolivegreen) 100%);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--lightolivegreen),
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkolivegreen),
+        -0.25rem 0.25rem 0.5rem 0rem var(--lightolivegreen);
+}
+
+.button3:hover {
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkmustard),
+        -0.25rem 0.25rem 0.5rem 0rem var(--lightmustard);
+}
+
+.button4:hover {
+    background-image: radial-gradient(circle at 100% 0%, white 0%, var(--lightrose) 50%, var(--lightrose) 100%);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkrose),
+        -0.1rem 0.1rem 0rem 0rem var(--darkrose),
+        -0.25rem 0.25rem 0.5rem 0.1rem var(--lightrose);
+}
+
+.button5:hover {
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkgray),
+        -0.1rem 0.1rem 0rem 0rem var(--darkgray),
+        -0.25rem 0.25rem 0.5rem 0.1rem var(--gray);
+}
+
+.button6:hover {
+    background-color: var(--darkgray);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--lightgray),
+        inset 0.15rem -0.15rem 0.5rem 0rem black,
+        -0.1rem 0.1rem 0rem 0rem black,
+        -0.25rem 0.25rem 0.5rem 0.1rem var(--gray);
+}
+
+.button7:hover {
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--lightgray),
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkgray),
+        -0.1rem 0.1rem 0rem 0rem black,
+        -0.25rem 0.25rem 0.5rem 0.1rem var(--gray);
+}
+
+.button8:hover {
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkviolet),
+        -0.15rem 0.15rem 0.5rem 0rem var(--darkviolet);
+}
+
+.button9:hover {
+    background-color: var(--rose);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--cream),
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--brown),
+        -0.15rem 0.15rem 0.5rem 0rem var(--lightbrown);
+}
+
+.button10:hover {
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem var(--lightgray),
+        inset 0.15rem -0.15rem 0.5rem 0rem black,
+        -0.15rem 0.15rem 0.5rem 0rem var(--gray);
+}
+
+.button11:hover {
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--lightgray),
+        -0.15rem 0.15rem 0.5rem 0rem var(--gray);
+}
+
+.button12:hover {
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkred),
+        -0.1rem 0.1rem 0rem 0rem var(--darkred),
+        -0.25rem 0.25rem 0.5rem 0rem var(--red);
+}
+
+.button13:hover {
+    background-color: var(--darkblue);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkblue),
+        -0.15rem 0.15rem 0.5rem 0rem var(--lightblue);
+}
+
+.button14:hover {
+    background-color: var(--purple);
+    box-shadow: inset -0.15rem 0.15rem 0.5rem 0rem white,
+        inset 0.15rem -0.15rem 0.5rem 0rem var(--darkviolet),
+        -0.1rem 0.1rem 0rem 0rem black,
+        -0.25rem 0.25rem 0.5rem 0.1rem var(--purple);
+}
+
+.card {
+  border: 1px solid var(--gray);
+  border-radius: 0.2rem;
+  box-shadow: -0.1rem 0.1rem 0rem 0rem var(--gray),
+    -0.25rem 0.25rem 0.5rem 0.1rem var(--cream);
+  min-height: min(10vw, 5rem);
+  margin: 0.5rem auto;
+  min-width: min(60vw, 15rem);
+  padding: 0.5rem 1rem;
+}
+
+.card_dark {
+    border: 1px solid var(--darkgray);
+    border-radius: 0.2rem;
+    box-shadow: -0.1rem 0.1rem 0rem 0rem black,
+      -0.25rem 0.25rem 0.75rem 0.1rem var(--darkgray);
+    min-height: min(10vw, 5rem);
+    margin: 0.5rem auto;
+    min-width: min(60vw, 15rem);
+    padding: 0.5rem 1rem;
+}
+
+/*-- ****************************************************** -->
+<---                 BACKGROUND COLORS                      -->
+<--- ****************************************************** -*/
+
+.red {
+  background-color: var(--red);
+ }
+ 
+ .darkred {
+     background-color: var(--darkred);
+ }
+ 
+ .orange {
+     background-color: var(--orange);
+ }
+ 
+ .yellow {
+     background-color: var(--yellow);
+ }
+ 
+ .lightmustard {
+     background-color: var(--lightmustard);
+ }
+ 
+ .mustard {
+     background-color: var(--mustard);
+ }
+ 
+ .darkmustard {
+     background-color: var(--darkmustard);
+ }
+ 
+ .green {
+     background-color: var(--green);
+ }
+ 
+ .darkgreen {
+     background-color: var(--darkgreen);
+ }
+ 
+ .lightolivegreen {
+     background-color: var(--lightolivegreen);
+ }
+ 
+ .olivegreen {
+     background-color: var(--olivegreen);
+ }
+ 
+ .darkolivegreen {
+     background-color: var(--darkolivegreen);
+ }
+ 
+ .lightaqua {
+     background-color: var(--lightaqua);
+ }
+ 
+ .aqua {
+     background-color: var(--aqua);
+ }
+ 
+ .darkaqua {
+     background-color: var(--darkaqua);
+ }
+ 
+ .lightblue {
+     background-color: var(--lightblue);
+ }
+ 
+ .blue {
+     background-color: var(--blue);
+ }
+ 
+ .darkblue {
+     background-color: var(--darkblue);
+ }
+ 
+ .navy {
+     background-color: var(--navy);
+ }
+ 
+ .lightdustyblue {
+     background-color: var(--lightdustyblue);
+ }
+ 
+ .dustyblue {
+     background-color: var(--dustyblue);
+ }
+ 
+ .darkdustyblue {
+     background-color: var(--darkdustyblue);
+ }
+ 
+ .indigo {
+     background-color: var(--indigo);
+ }
+ 
+ .lightviolet {
+     background-color: var(--lightviolet);
+ }
+ 
+ .violet {
+     background-color: var(--violet);
+ }
+ 
+ .darkviolet {
+     background-color: var(--darkviolet);
+ }
+ 
+ .purple {
+     background-color: var(--purple);
+ }
+ 
+ .pink {
+     background-color: var(--pink);
+ }
+ 
+ .hotpink {
+     background-color: var(--hotpink);
+ }
+ 
+ .lightrose {
+     background-color: var(--lightrose);
+ }
+ 
+ .rose {
+     background-color: var(--rose);
+ }
+ 
+ .darkrose {
+     background-color: var(--darkrose);
+ }
+ 
+ .white {
+     background-color: white;
+ }
+ 
+ .black {
+     background-color: black;
+ }
+ 
+ .cream {
+     background-color: var(--cream);
+ }
+ 
+ .lightbrown {
+     background-color: var(--lightbrown);
+ }
+ 
+ .brown {
+     background-color: var(--brown);
+ }
+ 
+ .lightgray {
+     background-color: var(--lightgray);
+ }
+ 
+ .gray {
+     background-color: var(--gray);
+ }
+ 
+ .darkgray {
+     background-color: var(--darkgray);
+ }
+ 
+ .lightslategray {
+     background-color: var(--lightslategray);
+ }
+ 
+ .slategray {
+     background-color: var(--slategray);
+ }
+ 
+ .darkslategray {
+     background-color: var(--darkslategray);
+ }
+
+ .blend1 {
+    background-image: radial-gradient(circle at 100% 0%, var(--cream) 0%, var(--cream) 20%, var(--darkdustyblue) 70%, var(--darkdustyblue) 100%);
+ }
+
+ .blend2 {
+    background-image: radial-gradient(circle at 100% 0%, var(--cream) 0%, var(--darkmustard) 30%, var(--darkblue) 100%);
+ }
+
+ .blend3 {
+    background-image: radial-gradient(circle at 100% 0%, var(--cream) 0%, var(--rose) 50%, var(--darkmustard) 100%);
+ }
+
+ .blend4 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightrose) 0%, var(--lightbrown) 50%, var(--darkrose) 100%);
+ }
+
+ .blend5 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightgray) 0%, var(--violet) 50%, var(--brown) 100%);
+ }
+
+ .blend6 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightslategray) 0%, var(--gray) 50%, var(--darkviolet) 100%);
+ }
+
+ .blend7 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightdustyblue) 0%, var(--slategray) 50%, var(--darkgray) 100%);
+ }
+
+ .blend8 {
+    background-image: radial-gradient(circle at 100% 0%, var(--cream) 0%, var(--slategray) 50%, var(--darkgreen) 100%);
+ }
+
+ .blend9 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightolivegreen) 0%, var(--dustyblue) 50%, var(--darkslategray) 100%);
+ }
+
+ .blend10 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightbrown) 0%, var(--lightolivegreen) 50%, var(--brown) 100%);
+ }
+
+ .blend11 {
+    background-image: radial-gradient(circle at 100% 0%, var(--cream) 0%, var(--violet) 50%, var(--darkdustyblue) 100%);
+ }
+ 
+ .blend12 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightgray) 0%, var(--slategray) 50%, var(--darkblue) 100%);
+ }
+ 
+ .blend13 {
+    background-image: radial-gradient(circle at 100% 0%, var(--cream) 0%, var(--darkaqua) 50%, var(--darkblue) 100%);
+ }
+
+ .blend14 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightgray) 0%, var(--darkaqua) 50%, var(--darkred) 100%);
+ }
+
+ .blend15 {
+    background-image: radial-gradient(circle at 100% 0%, var(--cream) 0%, var(--rose) 50%, var(--darkred) 100%);
+ }
+
+ .blend16 {
+    background-image: radial-gradient(circle at 100% 0%, white 0%, var(--lightgray) 50%, black 100%);
+ }
+
+ .blend17 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightmustard) 0%, var(--mustard) 50%, var(--darkmustard) 100%);
+ }
+
+ .blend18 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightrose) 0%, var(--rose) 50%, var(--darkrose) 100%);
+ }
+
+ .blend19 {
+    background-image: radial-gradient(circle at 100% 0%, var(--cream) 0%, var(--lightbrown) 50%, var(--brown) 100%);
+ }
+
+ .blend20 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightviolet) 0%, var(--violet) 50%, var(--darkviolet) 100%);
+ }
+
+ .blend21 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightgray) 0%, var(--gray) 50%, var(--darkgray) 100%);
+ }
+
+ .blend22 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightslategray) 0%, var(--slategray) 50%, var(--darkslategray) 100%);
+ }
+
+ .blend23 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightdustyblue) 0%, var(--dustyblue) 50%, var(--darkdustyblue) 100%);
+ }
+
+ .blend24 {
+    background-image: radial-gradient(circle at 100% 0%, var(--lightolivegreen) 0%, var(--olivegreen) 50%, var(--darkolivegreen) 100%);
+ }
+
+ .blend25 {
+    background-image: radial-gradient(circle at 100% 0%, white 0%, var(--lightgray) 50%, var(--cream) 100%);
+ }
+
+ .blend26 {
+    background-image: radial-gradient(circle at 100% 0%, white 0%, var(--cream) 50%, var(--lightrose) 100%);
+ }
+
+ .blend27 {
+    background-image: radial-gradient(circle at 100% 0%, white 0%, var(--lightgray) 50%, var(--lightdustyblue) 100%);
+ }
+
+ .blend28 {
+    background-image: radial-gradient(circle at 100% 0%, white 0%, var(--cream) 50%, var(--lightmustard) 100%);
+ }
+
+ .blend29 {
+    background-image: radial-gradient(circle at 100% 0%, white 0%, var(--cream) 50%, var(--lightolivegreen) 100%);
+ }
+
+ .blend30 {
+    background-image: radial-gradient(circle at 100% 0%, white 0%, var(--cream) 50%, var(--lightbrown) 100%);
+ }
+
+ .blend31 {
+    background-image: radial-gradient(circle at 100% 0%, var(--red) 0%, var(--orange) 50%, var(--yellow) 100%);
+ }
+
+/*-- ****************************************************** -->
+<---                     TEXT FONTS                         -->
+<--- ****************************************************** -*/
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.century {
+    font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+}
+
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.macondo {
+    font-family: 'Macondo', cursive;
+}
+
+.meow {
+    font-family: 'Meow Script', cursive;
+}
+
+.merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+.lucida {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nixie {
+    font-family: 'Nixie One', cursive;
+}
+
+.open {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.patrick {
+    font-family: 'Patrick Hand', cursive;
+}
+
+.press {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.source {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.special {
+    font-family: 'Special Elite', cursive;
+}
+
+.tahoma {
+    font-family: Tahoma, sans-serif;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.uni {
+    font-family: 'UnifrakturMaguntia', cursive;
+}
+
+.verdana {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/*-- ****************************************************** -->
+<---                    TEXT SHADOWS                        -->
+<--- ****************************************************** -*/
+
+.black_shadow {
+    text-shadow: -0.1rem 0.1rem 0.25rem black;
+}
+
+.white_shadow {
+    text-shadow: -0.1rem 0.1rem 0.25rem white;
+}
+
+/*-- ****************************************************** -->
+<---                        TEXT COLORS                      -->
+<--- ****************************************************** -*/
+
+.white_text {
+    color: white;
+    text-shadow: -0.1rem 0.1rem 0.25rem black;
+}
+
+.black_text {
+    color: black;
+    text-shadow: -0.1rem 0.1rem 0.25rem white;
+}
+
+.red_text {
+    color: var(--red);
+}
+   
+.darkred_text {
+   color: var(--darkred);
+}
+   
+.orange_text {
+   color: var(--orange);
+}
+   
+.yellow_text {
+   color: var(--yellow);
+}
+   
+.lightmustard_text {
+   color: var(--lightmustard);
+}
+   
+.mustard_text {
+   color: var(--mustard);
+}
+   
+.darkmustard_text {
+   color: var(--darkmustard);
+}
+   
+.green_text {
+   color: var(--green);
+}
+   
+.darkgreen_text {
+   color: var(--darkgreen);
+}
+   
+.lightolivegreen_text {
+   color: var(--lightolivegreen);
+}
+   
+.olivegreen_text {
+   color: var(--olivegreen);
+}
+   
+.darkolivegreen_text {
+   color: var(--darkolivegreen);
+}
+   
+.lightaqua_text {
+   color: var(--lightaqua);
+}
+   
+.aqua_text {
+   color: var(--aqua);
+}
+   
+.darkaqua_text {
+   color: var(--darkaqua);
+}
+   
+.lightblue_text {
+   color: var(--lightblue);
+}
+   
+.blue_text {
+   color: var(--blue);
+}
+   
+.darkblue_text {
+   color: var(--darkblue);
+}
+   
+.navy_text {
+   color: var(--navy);
+}
+   
+.lightdustyblue_text {
+   color: var(--lightdustyblue);
+}
+   
+.dustyblue_text {
+   color: var(--dustyblue);
+}
+   
+.darkdustyblue_text {
+   color: var(--darkdustyblue);
+}
+   
+.indigo_text {
+   color: var(--indigo);
+}
+   
+.lightviolet_text {
+   color: var(--lightviolet);
+}
+   
+.violet_text {
+   color: var(--violet);
+}
+   
+.darkviolet_text {
+   color: var(--darkviolet);
+}
+   
+.purple_text {
+   color: var(--purple);
+}
+   
+.pink_text {
+   color: var(--pink);
+}
+   
+.hotpink_text {
+   color: var(--hotpink);
+}
+   
+.lightrose_text {
+   color: var(--lightrose);
+}
+   
+.rose_text {
+   color: var(--rose);
+}
+   
+.darkrose_text {
+   color: var(--darkrose);
+}
+   
+.white_text {
+   color: white;
+}
+   
+.black_text {
+   color: black;
+}
+   
+.cream_text {
+   color: var(--cream);
+}
+   
+.lightbrown_text {
+   color: var(--lightbrown);
+}
+   
+.brown_text {
+   color: var(--brown);
+}
+   
+.lightgray_text {
+   color: var(--lightgray);
+}
+   
+.gray_text {
+   color: var(--gray);
+}
+   
+.darkgray_text {
+   color: var(--darkgray);
+}
+   
+.lightslategray_text {
+   color: var(--lightslategray);
+}
+   
+.slategray_text {
+   color: var(--slategray);
+}
+   
+.darkslategray_text {
+   color: var(--darkslategray);
+}
+ 

@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { useRouter } from "next/router";
 
+import styles from "./search_bar.module.css";
 import Button from "@/src/components/ui/button";
 import FormInput from "@/src/components/ui/form_input";
 import SearchContext from "@/src/context/search_context";
@@ -26,7 +27,7 @@ export default function SearchBar() {
     }
     
     return(
-        <form>
+        <form className={ styles.search_bar }>
             <FormInput 
                 key="search_field" 
                 id="search_field"
@@ -37,6 +38,7 @@ export default function SearchBar() {
                 value={ searchValue }
             />
             <Button
+                class_name="button_search"
                 key="search" 
                 id="search"
                 onClick={ handleOnClick }

@@ -1,0 +1,54 @@
+
+
+.container {
+    background-image: radial-gradient(circle at 100% 0%, var(--cream) 0%, var(--cream) 20%, var(--darkdustyblue) 60%, var(--darkdustyblue) 100%);
+}
+
+.mockmain {
+    margin: 0 auto;
+    width: min(70vw, 80rem);
+}
+
+.mockheader {
+    margin: 0 auto;
+    min-height: 7rem;
+}
+
+.mockfooter {
+    margin: 0 auto;
+    min-height: 7rem;
+}
+
+.section1 {
+    background-image: url('/McKelveyBackground50.PNG');
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    min-height: min(60vh, 55rem);
+}
+
+.section1 h1, .section1 p {
+    color: white;
+    text-shadow: -0.1rem 0.1rem 0.25rem black;
+}
+
+.section2 {
+    background-image: url('/public/McKelveyBackground50.PNG');
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;    margin: 0 auto;
+    min-height: min(60vh, 55rem);
+}
+
+.section3 {
+    margin: 0 auto;
+    min-height: min(60vh, 55rem);
+}

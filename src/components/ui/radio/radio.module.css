@@ -14,7 +14,7 @@
 }
 
 .radio_container input:focus {
-    box-shadow: 0 0 .5rem 0 rgb(100, 100, 100);
+    box-shadow: 0 0 .5rem 0 var(--darkslategray);
 }
 
 .error_message {
